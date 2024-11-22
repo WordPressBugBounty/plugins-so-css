@@ -82,8 +82,31 @@ if ( ! empty( $current_revision ) ) {
 					</div>
 				</div>
 
-					<div class="color-theme">
+
+				<div class="postbox" id="so-custom-css-editor-theme">
+					<h3 class="hndle" id="so_css_output_location_label">
+						<span>
+							<?php esc_html_e( 'CSS Output Location', 'so-css' ); ?>	
+						</span>
+					</h3>
+					<div class="inside">
+						<select
+							name="so_css_output_location"
+							id="so_css_output_location"
+							aria-labelledby="so_css_output_location_label"
+							aria-described_by="so_css_output_location_description"
+						>
+							<option value="file" <?php selected( 'file', $output_location ); ?>><?php esc_attr_e( 'Dedicated File', 'so-css' ); ?></option>
+							<option value="inline" <?php selected( 'inline', $output_location ); ?>><?php esc_attr_e( 'Inline', 'so-css' ); ?></option>
+						</select>
+
+						<p id="so_css_output_location_description" class="description">
+							<?php
+							esc_html_e( 'Dedicated CSS File offers best performance, Internal CSS embeds styles in page HTML.', 'so-css' );
+							?>
+						</p>
 					</div>
+				</div>
 
 			</div>
 

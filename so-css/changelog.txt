@@ -1,5 +1,9 @@
 == Changelog ==
 
+= 1.6.0 - 22 November 2024 =
+* Added `Visual Editor: Decoration > Background Attachment` setting.
+* Added CSS Ouput Location setting. Dedicated CSS File offers best performance, Internal CSS embeds styles in page HTML.
+
 = 1.5.11 - 13 August 2024 =
 * Added Divi theme compatibility.
 * Accounted for for themes that don't use menu item selectors by adding them automatically.

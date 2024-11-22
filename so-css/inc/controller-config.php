@@ -220,6 +220,7 @@ return array(
 					),
 				),
 			),
+
 			array(
 				'title' => esc_html__( 'Background Size', 'so-css' ),
 				'type'  => 'select',
@@ -231,6 +232,18 @@ return array(
 						'percentage' => esc_html__( 'percentage', 'so-css' ),
 						'cover'      => esc_html__( 'cover', 'so-css' ),
 						'contain'    => esc_html__( 'contain', 'so-css' ),
+					),
+				),
+			),
+
+			array(
+				'title' => esc_html__( 'Background Attachment', 'so-css' ),
+				'type'  => 'select',
+				'args'  => array(
+					'property' => 'background-attachment',
+					'options'  => array(
+						'scroll' => esc_html__( 'scroll', 'so-css' ),
+						'fixed'  => esc_html__( 'fixed', 'so-css' ),
 					),
 				),
 			),

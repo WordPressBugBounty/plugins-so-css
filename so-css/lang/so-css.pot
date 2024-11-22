@@ -16,7 +16,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: so-css.php:3, so-css.php:561
+#: so-css.php:3, so-css.php:606
 msgid "SiteOrigin CSS"
 msgstr ""
 
@@ -36,87 +36,87 @@ msgstr ""
 msgid "https://siteorigin.com/css/"
 msgstr ""
 
-#: so-css.php:365, so-css.php:365, so-css.php:408
+#: so-css.php:392, so-css.php:393, so-css.php:453
 msgid "Custom CSS"
 msgstr ""
 
-#: so-css.php:410
+#: so-css.php:455
 msgid "SiteOrigin CSS adds any custom CSS you enter here into your site's header. "
 msgstr ""
 
-#: so-css.php:411
+#: so-css.php:456
 msgid "These changes will persist across updates so it's best to make all your changes here. "
 msgstr ""
 
-#: so-css.php:477
+#: so-css.php:522
 msgid "Unchanged"
 msgstr ""
 
-#: so-css.php:478
+#: so-css.php:523
 msgid "Select"
 msgstr ""
 
-#: so-css.php:479
+#: so-css.php:524
 msgid "Select Image"
 msgstr ""
 
-#: so-css.php:480
+#: so-css.php:525
 msgid "Are you sure you want to leave without saving?"
 msgstr ""
 
-#: so-css.php:546
+#: so-css.php:591
 msgid "CSS Editor"
 msgstr ""
 
-#: so-css.php:547
+#: so-css.php:592
 msgid "Support"
 msgstr ""
 
-#: so-css.php:550
+#: so-css.php:595
 msgid "Addons"
 msgstr ""
 
-#: so-css.php:564
+#: so-css.php:609
 msgid "Changes apply to %s and its child themes"
 msgstr ""
 
-#: so-css.php:565, tpl/page.php:112, tpl/page.php:168
+#: so-css.php:610, tpl/page.php:135, tpl/page.php:191
 msgid "Save CSS"
 msgstr ""
 
-#: so-css.php:572
+#: so-css.php:617
 msgid "Editing CSS for: %s"
 msgstr ""
 
-#: so-css.php:577
+#: so-css.php:622
 msgid "Changes apply to the %s %s when the current theme is %s or its child themes"
 msgstr ""
 
-#: so-css.php:584
+#: so-css.php:629
 msgid "Save %s CSS"
 msgstr ""
 
-#: so-css.php:597
+#: so-css.php:642
 msgid "Revert to this revision"
 msgstr ""
 
-#: so-css.php:651, so-css.php:672, so-css.php:691
+#: so-css.php:697, so-css.php:718, so-css.php:737
 msgid "The supplied nonce is invalid."
 msgstr ""
 
-#: so-css.php:652, so-css.php:673, so-css.php:692
+#: so-css.php:698, so-css.php:719, so-css.php:738
 msgid "Invalid nonce."
 msgstr ""
 
-#: so-css.php:743
+#: so-css.php:789
 msgid "%d chars"
 msgstr ""
 
-#: so-css.php:743
+#: so-css.php:789
 msgid "Latest"
 msgstr ""
 
-#: so-css.php:749
+#: so-css.php:795
 msgid "No revisions yet."
 msgstr ""
 
@@ -160,7 +160,7 @@ msgstr ""
 msgid "Font Style"
 msgstr ""
 
-#: inc/controller-config.php:59, inc/controller-config.php:75, inc/controller-config.php:104, inc/controller-config.php:415, inc/controller-config.php:442, inc/controller-config.php:454
+#: inc/controller-config.php:59, inc/controller-config.php:75, inc/controller-config.php:104, inc/controller-config.php:428, inc/controller-config.php:455, inc/controller-config.php:467
 msgid "None"
 msgstr ""
 
@@ -216,11 +216,11 @@ msgstr ""
 msgid "Text Align"
 msgstr ""
 
-#: inc/controller-config.php:124, inc/controller-config.php:443, inc/controller-config.php:455
+#: inc/controller-config.php:124, inc/controller-config.php:456, inc/controller-config.php:468
 msgid "Left"
 msgstr ""
 
-#: inc/controller-config.php:125, inc/controller-config.php:444, inc/controller-config.php:456
+#: inc/controller-config.php:125, inc/controller-config.php:457, inc/controller-config.php:469
 msgid "Right"
 msgstr ""
 
@@ -304,215 +304,227 @@ msgstr ""
 msgid "no-repeat"
 msgstr ""
 
-#: inc/controller-config.php:224
+#: inc/controller-config.php:225
 msgid "Background Size"
 msgstr ""
 
-#: inc/controller-config.php:229
+#: inc/controller-config.php:230
 msgid "auto"
 msgstr ""
 
-#: inc/controller-config.php:230
+#: inc/controller-config.php:231
 msgid "length"
 msgstr ""
 
-#: inc/controller-config.php:231
+#: inc/controller-config.php:232
 msgid "percentage"
 msgstr ""
 
-#: inc/controller-config.php:232
+#: inc/controller-config.php:233
 msgid "cover"
 msgstr ""
 
-#: inc/controller-config.php:233
+#: inc/controller-config.php:234
 msgid "contain"
 msgstr ""
 
-#: inc/controller-config.php:239
+#: inc/controller-config.php:240
+msgid "Background Attachment"
+msgstr ""
+
+#: inc/controller-config.php:245
+msgid "scroll"
+msgstr ""
+
+#: inc/controller-config.php:246
+msgid "fixed"
+msgstr ""
+
+#: inc/controller-config.php:252
 msgid "Box Shadow"
 msgstr ""
 
-#: inc/controller-config.php:247
+#: inc/controller-config.php:260
 msgid "Opacity"
 msgstr ""
 
-#: inc/controller-config.php:260
+#: inc/controller-config.php:273
 msgid "Borders"
 msgstr ""
 
-#: inc/controller-config.php:303
+#: inc/controller-config.php:316
 msgid "Border Radius"
 msgstr ""
 
-#: inc/controller-config.php:326
+#: inc/controller-config.php:339
 msgid "Layout"
 msgstr ""
 
-#: inc/controller-config.php:330
+#: inc/controller-config.php:343
 msgid "Margin"
 msgstr ""
 
-#: inc/controller-config.php:347
+#: inc/controller-config.php:360
 msgid "Padding"
 msgstr ""
 
-#: inc/controller-config.php:364
+#: inc/controller-config.php:377
 msgid "Position"
 msgstr ""
 
-#: inc/controller-config.php:369
+#: inc/controller-config.php:382
 msgid "Absolute"
 msgstr ""
 
-#: inc/controller-config.php:370
+#: inc/controller-config.php:383
 msgid "Fixed"
 msgstr ""
 
-#: inc/controller-config.php:371
+#: inc/controller-config.php:384
 msgid "Relative"
 msgstr ""
 
-#: inc/controller-config.php:372
+#: inc/controller-config.php:385
 msgid "Static"
 msgstr ""
 
-#: inc/controller-config.php:373
+#: inc/controller-config.php:386
 msgid "Inherit"
 msgstr ""
 
-#: inc/controller-config.php:378
+#: inc/controller-config.php:391
 msgid "Absolute Position"
 msgstr ""
 
-#: inc/controller-config.php:394
+#: inc/controller-config.php:407
 msgid "Width"
 msgstr ""
 
-#: inc/controller-config.php:402
+#: inc/controller-config.php:415
 msgid "Height"
 msgstr ""
 
-#: inc/controller-config.php:410
+#: inc/controller-config.php:423
 msgid "Display"
 msgstr ""
 
-#: inc/controller-config.php:416
+#: inc/controller-config.php:429, tpl/page.php:100
 msgid "Inline"
 msgstr ""
 
-#: inc/controller-config.php:417
+#: inc/controller-config.php:430
 msgid "Block"
 msgstr ""
 
-#: inc/controller-config.php:418
+#: inc/controller-config.php:431
 msgid "Flex"
 msgstr ""
 
-#: inc/controller-config.php:419
+#: inc/controller-config.php:432
 msgid "Inline Block"
 msgstr ""
 
-#: inc/controller-config.php:420
+#: inc/controller-config.php:433
 msgid "Inline Flex"
 msgstr ""
 
-#: inc/controller-config.php:421
+#: inc/controller-config.php:434
 msgid "Inline Table"
 msgstr ""
 
-#: inc/controller-config.php:422
+#: inc/controller-config.php:435
 msgid "List Item"
 msgstr ""
 
-#: inc/controller-config.php:423
+#: inc/controller-config.php:436
 msgid "Run In"
 msgstr ""
 
-#: inc/controller-config.php:424
+#: inc/controller-config.php:437
 msgid "Table"
 msgstr ""
 
-#: inc/controller-config.php:425
+#: inc/controller-config.php:438
 msgid "Table Caption"
 msgstr ""
 
-#: inc/controller-config.php:426
+#: inc/controller-config.php:439
 msgid "Table Column Group"
 msgstr ""
 
-#: inc/controller-config.php:427
+#: inc/controller-config.php:440
 msgid "Table Header Group"
 msgstr ""
 
-#: inc/controller-config.php:428
+#: inc/controller-config.php:441
 msgid "Table Footer Group"
 msgstr ""
 
-#: inc/controller-config.php:429
+#: inc/controller-config.php:442
 msgid "Table Row Group"
 msgstr ""
 
-#: inc/controller-config.php:430
+#: inc/controller-config.php:443
 msgid "Table Cell"
 msgstr ""
 
-#: inc/controller-config.php:431
+#: inc/controller-config.php:444
 msgid "Table Column"
 msgstr ""
 
-#: inc/controller-config.php:432
+#: inc/controller-config.php:445
 msgid "Table Row"
 msgstr ""
 
-#: inc/controller-config.php:437
+#: inc/controller-config.php:450
 msgid "Float"
 msgstr ""
 
-#: inc/controller-config.php:449
+#: inc/controller-config.php:462
 msgid "Clear"
 msgstr ""
 
-#: inc/controller-config.php:457
+#: inc/controller-config.php:470
 msgid "Both"
 msgstr ""
 
-#: inc/controller-config.php:462
+#: inc/controller-config.php:475
 msgid "Visibility"
 msgstr ""
 
-#: inc/controller-config.php:467, inc/controller-config.php:479, inc/controller-config.php:492, inc/controller-config.php:505
+#: inc/controller-config.php:480, inc/controller-config.php:492, inc/controller-config.php:505, inc/controller-config.php:518
 msgid "Visible"
 msgstr ""
 
-#: inc/controller-config.php:468, inc/controller-config.php:480, inc/controller-config.php:493, inc/controller-config.php:506
+#: inc/controller-config.php:481, inc/controller-config.php:493, inc/controller-config.php:506, inc/controller-config.php:519
 msgid "Hidden"
 msgstr ""
 
-#: inc/controller-config.php:469
+#: inc/controller-config.php:482
 msgid "Collapse"
 msgstr ""
 
-#: inc/controller-config.php:474
+#: inc/controller-config.php:487
 msgid "Overflow"
 msgstr ""
 
-#: inc/controller-config.php:481, inc/controller-config.php:494, inc/controller-config.php:507
+#: inc/controller-config.php:494, inc/controller-config.php:507, inc/controller-config.php:520
 msgid "Scroll"
 msgstr ""
 
-#: inc/controller-config.php:482, inc/controller-config.php:495, inc/controller-config.php:508
+#: inc/controller-config.php:495, inc/controller-config.php:508, inc/controller-config.php:521
 msgid "Auto"
 msgstr ""
 
-#: inc/controller-config.php:487
+#: inc/controller-config.php:500
 msgid "Overflow X"
 msgstr ""
 
-#: inc/controller-config.php:500
+#: inc/controller-config.php:513
 msgid "Overflow Y"
 msgstr ""
 
-#: inc/controller-config.php:513
+#: inc/controller-config.php:526
 msgid "Z-Index"
 msgstr ""
 
@@ -584,27 +596,39 @@ msgstr ""
 msgid "Dark"
 msgstr ""
 
-#: tpl/page.php:103, tpl/page.php:104
-msgid "Open Expanded Mode"
+#: tpl/page.php:89
+msgid "CSS Output Location"
+msgstr ""
+
+#: tpl/page.php:99
+msgid "Dedicated File"
 msgstr ""
 
 #: tpl/page.php:105
+msgid "Dedicated CSS File offers best performance, Internal CSS embeds styles in page HTML."
+msgstr ""
+
+#: tpl/page.php:126, tpl/page.php:127
+msgid "Open Expanded Mode"
+msgstr ""
+
+#: tpl/page.php:128
 msgid "Close Expanded Mode"
 msgstr ""
 
-#: tpl/page.php:108
+#: tpl/page.php:131
 msgid "Open Visual Mode"
 msgstr ""
 
-#: tpl/page.php:137
+#: tpl/page.php:160
 msgid "Other Settings"
 msgstr ""
 
-#: tpl/page.php:142
+#: tpl/page.php:165
 msgid "Enable SiteOrigin Installer: "
 msgstr ""
 
-#: tpl/page.php:165
+#: tpl/page.php:188
 msgid "Close"
 msgstr ""
 

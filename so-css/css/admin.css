@@ -130,11 +130,9 @@
   float: right;
   width: 315px;
 }
-#so-custom-css-info *:first-child {
-  margin-top: 0;
-}
-#so-custom-css-info *:last-child {
-  margin-bottom: 0;
+#so-custom-css-info .inside {
+  margin: 11px;
+  padding: 0;
 }
 #so-custom-css-info p.so-custom-css-submit {
   padding-top: 1px;
@@ -145,6 +143,10 @@
   width: 100%;
 }
 #so-custom-css-info #so_css_editor_theme {
+  margin-top: 6px;
+  width: 100%;
+}
+#so-custom-css-info select {
   margin-top: 6px;
   width: 100%;
 }
