@@ -2,7 +2,7 @@
 /*
 Plugin Name: SiteOrigin CSS
 Description: An advanced CSS editor from SiteOrigin.
-Version: 1.6.0
+Version: 1.6.1
 Author: SiteOrigin
 Author URI: https://siteorigin.com
 Plugin URI: https://siteorigin.com/css/
@@ -14,7 +14,7 @@ Text Domain: so-css
 // Handle the legacy CSS editor that came with SiteOrigin themes
 include plugin_dir_path( __FILE__ ) . 'inc/legacy.php';
 
-define( 'SOCSS_VERSION', '1.6.0' );
+define( 'SOCSS_VERSION', '1.6.1' );
 define( 'SOCSS_JS_SUFFIX', '.min' );
 
 /**
@@ -319,11 +319,11 @@ class SiteOrigin_CSS {
 	 *
 	 * This method retrieves the CSS output location setting from the
 	 * `so_css_output_location` option and returns true if the setting is
-	 * set to 'file' and false if it is set to 'inline'.
+	 * set to 'file'. Otherwise false is returned.
 	 *
 	 * @param string|null $location The unused default location value.
 	 *
-	 * @return bool True if the CSS should be output in a dedicated file, false if it should be inline.
+	 * @return bool True if the CSS should be output in a dedicated file.
 	 */
 	public function css_output_location( $location = null ) {
 		$output_location =  get_option(
@@ -1023,13 +1023,10 @@ class SiteOrigin_CSS {
 	public function version_check() {
 		$version = get_option( 'so_css_version' );
 
-		// If there's no version set, check if this site already
-		// had SO CSS installed by checking for custom CSS.
-		if ( empty( $version ) ) {
-			update_option(
-				'so_css_output_location',
-				! empty( $this->get_custom_css( $this->theme ) ) ? 'inline' : 'file'
-			);
+		// If there's no version set or it's set to 1.6.0, check if 
+		// this site already had SO CSS installed by checking for custom CSS.
+		if ( empty( $version ) || $version === '1.6.0' ) {
+			update_option( 'so_css_output_location', 'file' );
 		}
 
 		if ( empty( $version ) || version_compare( $version, SOCSS_VERSION, '<' ) ) {
