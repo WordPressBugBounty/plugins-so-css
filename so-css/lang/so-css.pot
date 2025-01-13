@@ -1,4 +1,4 @@
-# Copyright (C) 2024 so-css
+# Copyright (C) 2025 so-css
 # This file is distributed under the same license as the so-css package.
 msgid ""
 msgstr ""

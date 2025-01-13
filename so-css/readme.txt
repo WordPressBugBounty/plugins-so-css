@@ -3,8 +3,8 @@ Tags: css editor, visual css, live editing, theme editor, website styling
 Requires at least: 3.9
 Requires PHP: 7.0.0
 Tested up to: 6.7
-Stable tag: 1.6.1
-Build time: 2024-11-26T00:18:43+00:00
+Stable tag: 1.6.2
+Build time: 2025-01-13T11:30:07+00:00
 License: GPLv2 or later
 Contributors: gpriday, alexgso
 Donate link: https://siteorigin.com/downloads/premium/
@@ -71,6 +71,9 @@ Free support is available on the [SiteOrigin support forums](https://siteorigin.
 SiteOrigin Premium includes access to our professional email support service, perfect for those times when you need fast and effective technical support. We're standing by to assist you in any way we can.
 
 == Changelog ==
+
+= 1.6.2 - 13 January 2025 =
+* Fixed uninstall process to prevent PHP fatal error by updating the `register_uninstall_hook` callback to use a valid instance method.
 
 = 1.6.1 - 25 November 2024 =
 * CSS Output Location: Additional check to ensure the default is Dedicated File.
