@@ -2,7 +2,7 @@
 /*
 Plugin Name: SiteOrigin CSS
 Description: An advanced CSS editor from SiteOrigin.
-Version: 1.6.2
+Version: 1.6.3
 Author: SiteOrigin
 Author URI: https://siteorigin.com
 Plugin URI: https://siteorigin.com/css/
@@ -14,7 +14,7 @@ Text Domain: so-css
 // Handle the legacy CSS editor that came with SiteOrigin themes
 include plugin_dir_path( __FILE__ ) . 'inc/legacy.php';
 
-define( 'SOCSS_VERSION', '1.6.2' );
+define( 'SOCSS_VERSION', '1.6.3' );
 define( 'SOCSS_JS_SUFFIX', '.min' );
 
 /**
@@ -83,7 +83,7 @@ class SiteOrigin_CSS {
 			}
 		}
 
-		register_uninstall_hook( __FILE__, array( $this, 'uninstall' ) );
+		register_uninstall_hook( __FILE__, array( 'SiteOrigin_CSS', 'uninstall' ) );
 	}
 
 	/**
@@ -1050,11 +1050,12 @@ class SiteOrigin_CSS {
 	 *
 	 * @return void
 	 */
-	public function uninstall() {
+	public static function uninstall() {
+		$theme = basename( get_template_directory() );
 		delete_option( 'so_css_version' );
 		delete_option( 'so_css_editor_theme' );
 		delete_option( 'so_css_output_location' );
-		delete_option( 'siteorigin_custom_css_revisions[' . $this->theme . ']' );
+		delete_option( 'siteorigin_custom_css_revisions[' . $theme . ']' );
 	}
 }
 
