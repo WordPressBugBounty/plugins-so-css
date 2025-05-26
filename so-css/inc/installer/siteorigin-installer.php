@@ -2,7 +2,7 @@
 /*
 Plugin Name: SiteOrigin Installer
 Plugin URI: https://siteorigin.com/installer/
-Description: This plugin installs all the SiteOrigin themes and plugins you need to get started with your new site.
+Description: Easily install all essential SiteOrigin plugins and themes in one go for your WordPress site.
 Author: SiteOrigin
 Author URI: https://siteorigin.com
 Version: 1.0.3

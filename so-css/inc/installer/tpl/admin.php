@@ -2,13 +2,13 @@
 	<div class="siteorigin-installer-header">
 		<h1 class="siteorigin-logo">
 			<img src="<?php echo esc_url( plugin_dir_url( __FILE__ ) ) . '../img/siteorigin.svg'; ?>" />
-			<?php esc_html_e( 'SiteOrigin Installer', 'siteorigin-installer' ); ?>
+			<?php esc_html_e( 'SiteOrigin Installer', 'so-css' ); ?>
 		</h1>
 
 		<ul class="page-sections">
-			<li><a href="#" data-section="plugins"><?php esc_html_e( 'Plugins', 'siteorigin-installer' ); ?></a></li>
-			<li><a href="#" data-section="themes"><?php esc_html_e( 'Themes', 'siteorigin-installer' ); ?></a></li>
-			<li class="active-section"><a href="#" data-section="all"><?php esc_html_e( 'All', 'siteorigin-installer' ); ?></a></li>
+			<li><a href="#" data-section="plugins"><?php esc_html_e( 'Plugins', 'so-css' ); ?></a></li>
+			<li><a href="#" data-section="themes"><?php esc_html_e( 'Themes', 'so-css' ); ?></a></li>
+			<li class="active-section"><a href="#" data-section="all"><?php esc_html_e( 'All', 'so-css' ); ?></a></li>
 		</ul>
 	</div>
 
@@ -42,8 +42,8 @@
 							if ( ! empty( $highlight ) && $slug == $highlight ) {
 								echo '<span class="siteorigin-required">';
 								printf(
-									esc_html__( 'Required %s', 'siteorigin-installer' ),
-									$item['type'] == 'plugins' ? esc_html__( 'Plugin', 'siteorigin-installer' ) : esc_html__( 'Theme', 'siteorigin-installer' )
+									esc_html__( 'Required %s', 'so-css' ),
+									$item['type'] == 'plugins' ? esc_html__( 'Plugin', 'so-css' ) : esc_html__( 'Theme', 'so-css' )
 								);
 								echo '</span>';
 							}
@@ -54,9 +54,9 @@
 						<div class="so-type-indicator">
 							<?php
 							if ( $item['type'] == 'plugins' ) {
-								esc_html_e( 'Plugin', 'siteorigin-installer' );
+								esc_html_e( 'Plugin', 'so-css' );
 							} else {
-								esc_html_e( 'Theme', 'siteorigin-installer' );
+								esc_html_e( 'Theme', 'so-css' );
 							}
 							?>
 						</div>
@@ -70,28 +70,37 @@
 								! empty( $item['update'] ) ||
 								$item['type'] == 'themes'
 							) {
-								if ( $slug == 'siteorigin-premium' ) {
-									$premium_url = 'https://siteorigin.com/downloads/premium/';
-									$affiliate_id = apply_filters( 'siteorigin_premium_affiliate_id', '' );
-									if ( $affiliate_id && is_numeric( $affiliate_id ) ) {
-										$premium_url = add_query_arg( 'ref', urlencode( $affiliate_id ), $premium_url );
-									}
-									?>
-									<a href="<?php echo esc_url( $premium_url ); ?>" target="_blank" rel="noopener noreferrer" class="button-primary">
-										<?php esc_html_e( 'Get SiteOrigin Premium', 'siteorigin-installer' ); ?>
-									</a>
-									<?php
-								} elseif ( ! empty( $item['status'] ) || $item['type'] == 'themes' ) {
+								$text = '';
+								if ( ! empty( $item['status'] ) || $item['type'] == 'themes' ) {
 									if ( $item['status'] == 'install' ) {
-										$text = __( 'Install', 'siteorigin-installer' );
+
+
+										if ( $slug == 'siteorigin-premium' ) {
+											$premium_url = 'https://siteorigin.com/downloads/premium/';
+											$affiliate_id = apply_filters( 'siteorigin_premium_affiliate_id', '' );
+											if ( $affiliate_id && is_numeric( $affiliate_id ) ) {
+												$premium_url = add_query_arg( 'ref', urlencode( $affiliate_id ), $premium_url );
+											}
+											?>
+											<a href="<?php echo esc_url( $premium_url ); ?>" target="_blank" rel="noopener noreferrer" class="button-primary">
+												<?php esc_html_e( 'Get SiteOrigin Premium', 'so-css' ); ?>
+											</a>
+											<?php
+										} else {
+
+										$text = __( 'Install', 'so-css' );
+										}
 									} else {
-										$text = __( 'Activate', 'siteorigin-installer' );
+										$text = __( 'Activate', 'so-css' );
 									}
-									require 'action-btn.php';
+
+									if ( ! empty( $text ) ) {
+										require 'action-btn.php';
+									}
 								}
 
 								if ( ! empty( $item['update'] ) ) {
-									$text = __( 'Update', 'siteorigin-installer' );
+									$text = __( 'Update', 'so-css' );
 									$item['status'] = 'update';
 									require 'action-btn.php';
 								}
@@ -104,13 +113,13 @@
 							) {
 								?>
 								<a href="<?php echo esc_url( $item['demo'] ); ?>" target="_blank" rel="noopener noreferrer" class="siteorigin-demo">
-									<?php esc_html_e( 'Demo', 'siteorigin-installer' ); ?>
+									<?php esc_html_e( 'Demo', 'so-css' ); ?>
 								</a>
 							<?php } ?>
 
 							<?php if ( ! empty( $item['documentation'] ) ) { ?>
 								<a href="<?php echo esc_url( $item['documentation'] ); ?>" target="_blank" rel="noopener noreferrer" class="siteorigin-docs">
-									<?php esc_html_e( 'Documentation', 'siteorigin-installer' ); ?>
+									<?php esc_html_e( 'Documentation', 'so-css' ); ?>
 								</a>
 							<?php } ?>
 						</div>

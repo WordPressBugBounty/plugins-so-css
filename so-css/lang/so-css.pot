@@ -21,18 +21,18 @@ msgid "SiteOrigin CSS"
 msgstr ""
 
 #: so-css.php:4
-msgid "An advanced CSS editor from SiteOrigin."
+msgid "Powerful, simple CSS editing for WordPress. Visual controls & real-time previews for effortless site customization."
 msgstr ""
 
 #: so-css.php:6, inc/installer/siteorigin-installer.php:6
 msgid "SiteOrigin"
 msgstr ""
 
-#: so-css.php:7, inc/installer/siteorigin-installer.php:7
+#: so-css.php:8, inc/installer/siteorigin-installer.php:7
 msgid "https://siteorigin.com"
 msgstr ""
 
-#: so-css.php:8
+#: so-css.php:9
 msgid "https://siteorigin.com/css/"
 msgstr ""
 
@@ -641,5 +641,5 @@ msgid "https://siteorigin.com/installer/"
 msgstr ""
 
 #: inc/installer/siteorigin-installer.php:5
-msgid "This plugin installs all the SiteOrigin themes and plugins you need to get started with your new site."
+msgid "Easily install all essential SiteOrigin plugins and themes in one go for your WordPress site."
 msgstr ""
