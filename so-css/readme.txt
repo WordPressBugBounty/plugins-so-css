@@ -2,9 +2,9 @@
 Tags: css editor, visual css, live editing, theme editor, website styling
 Requires at least: 3.9
 Requires PHP: 7.0.0
-Tested up to: 6.8
-Stable tag: 1.6.4
-Build time: 2025-05-26T22:14:20+01:00
+Tested up to: 6.9
+Stable tag: 1.6.5
+Build time: 2025-12-06T20:16:21+00:00
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Contributors: gpriday, alexgso
@@ -72,6 +72,9 @@ Free support is available on the [SiteOrigin support forums](https://siteorigin.
 SiteOrigin Premium includes access to our professional email support service, perfect for those times when you need fast and effective technical support. We're standing by to assist you in any way we can.
 
 == Changelog ==
+
+= 1.6.5 - 06 December 2025 =
+* Updated Tested up to tag.
 
 = 1.6.4 - 26 May 2025 =
 * Installer: Updated submodule.

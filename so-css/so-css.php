@@ -2,7 +2,7 @@
 /*
 Plugin Name: SiteOrigin CSS
 Description: Powerful, simple CSS editing for WordPress. Visual controls & real-time previews for effortless site customization.
-Version: 1.6.4
+Version: 1.6.5
 Author: SiteOrigin
 Text Domain: so-css
 Author URI: https://siteorigin.com
@@ -14,7 +14,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 // Handle the legacy CSS editor that came with SiteOrigin themes
 include plugin_dir_path( __FILE__ ) . 'inc/legacy.php';
 
-define( 'SOCSS_VERSION', '1.6.4' );
+define( 'SOCSS_VERSION', '1.6.5' );
 define( 'SOCSS_JS_SUFFIX', '.min' );
 
 /**
