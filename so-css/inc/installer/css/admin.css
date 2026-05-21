@@ -10,17 +10,20 @@
 
 .siteorigin-installer-wrap .siteorigin-logo {
 	align-items: center;
-	color: #666;
+	color: #494949;
 	display: flex;
-	font: 300 2.3em/1.4em "proxima-nova","Open Sans",Helvetica,Arial,sans-serif;
-	gap: 8.5px;
+	font-family: "proxima-nova", "Open Sans", Helvetica, Arial, sans-serif;
+	font-size: 28px;
+	font-weight: 300;
+	gap: 10px;
+	line-height: 1.4em;
 	margin-bottom: 8px;
 	margin-top: 9px;
 }
 
 .siteorigin-installer-wrap .siteorigin-logo img {
-	height: 26px;
-	opacity: 0.7;
+	height: 28px;
+	opacity: 1;
 	width: auto;
 }
 
@@ -38,7 +41,7 @@
 	display: inline-block;
 	font-size: 12px;
 	line-height: 1em;
-	margin: 0 0 -0.7px 0;
+	margin: 0 0 -1px 0;
 	transition: all .2s;
 }
 
@@ -56,12 +59,13 @@
 }
 
 .siteorigin-installer-wrap .page-sections li:hover {
- 	background: #f3f3f3;
+	background: #f3f3f3;
 }
 
 .siteorigin-installer-wrap .page-sections li.active-section {
 	background: #f0f0f0;
 	border-bottom-color: #f0f0f0;
+	margin-bottom: -1px;
 }
 
 .siteorigin-installer-wrap .siteorigin-products {
@@ -70,6 +74,7 @@
 	min-width: 100%;
 	position: relative;
 }
+
 .siteorigin-installer-wrap .siteorigin-installer-item {
 	box-sizing: border-box;
 	padding: 0 10px 24px 10px;
@@ -82,9 +87,9 @@
 	border: 1px solid #d9d9d9;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 	box-sizing: border-box;
+	display: flex;
 	overflow: hidden;
 	padding: 24px;
-	display: flex;
 }
 
 .siteorigin-installer-wrap .siteorigin-installer-item.highlight-item .siteorigin-installer-item-body {
@@ -92,8 +97,8 @@
 }
 
 .siteorigin-installer-wrap .siteorigin-installer-item.highlight-item .siteorigin-installer-item-body .siteorigin-required {
-	display: block;
 	color: #0073aa;
+	display: block;
 	margin-bottom: 1em;
 }
 
@@ -162,7 +167,6 @@
 
 .siteorigin-installer-wrap .siteorigin-installer-item .so-buttons.so-buttons-force-wrap a {
 	flex: 100%;
-
 }
 
 @-webkit-keyframes SiteOriginInstallerloading {
@@ -207,8 +211,8 @@
 .siteorigin-installer-wrap .siteorigin-installer-item .so-buttons .siteorigin-installer-button:focus {
 	background: #f6f7f7;
 	border-color: #3582c4;
-	color: #0a4b78;
 	box-shadow: 0 0 0 1px #3582c4;
+	color: #0a4b78;
 	outline: 2px solid transparent;
 	outline-offset: 0;
 }
@@ -226,12 +230,12 @@
 }
 
 .siteorigin-installer-wrap .siteorigin-installer-item .so-buttons .siteorigin-installer-button.disabled {
+	-webkit-animation: SiteOriginInstallerloading 3s linear infinite;
+	background: linear-gradient( 90deg, #f0f0f1 0%, rgba( 240, 240, 241, 0.5 ) 40%, rgba( 240, 240, 241, 0.5 ) 60%, #f0f0f1 100% );
 	border-color: #dcdcde;
 	box-shadow: none;
 	color: #a7aaad;
 	cursor: default;
-	-webkit-animation: SiteOriginInstallerloading 3s linear infinite;
-	background: linear-gradient( 90deg, #f0f0f1 0%, rgba( 240,240,241, 0.5 ) 40%, rgba( 240,240,241, 0.5 ) 60%, #f0f0f1 100% );
 }
 
 .siteorigin-installer-wrap .siteorigin-installer-item.siteorigin-installer-item-active .siteorigin-installer-item-toggle-active .siteorigin-installer-item-activate {
@@ -267,3 +271,4 @@
 #adminmenu #toplevel_page_admin-page-siteorigin-installer  div.wp-menu-image.svg {
 	background-size: 26px auto;
 }
+

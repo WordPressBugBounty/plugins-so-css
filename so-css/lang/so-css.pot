@@ -1,4 +1,4 @@
-# Copyright (C) 2025 so-css
+# Copyright (C) 2026 so-css
 # This file is distributed under the same license as the so-css package.
 msgid ""
 msgstr ""
@@ -24,11 +24,11 @@ msgstr ""
 msgid "Powerful, simple CSS editing for WordPress. Visual controls & real-time previews for effortless site customization."
 msgstr ""
 
-#: so-css.php:6, inc/installer/siteorigin-installer.php:6
+#: so-css.php:6, inc/installer/siteorigin-installer.php:9
 msgid "SiteOrigin"
 msgstr ""
 
-#: so-css.php:8, inc/installer/siteorigin-installer.php:7
+#: so-css.php:8, inc/installer/siteorigin-installer.php:11
 msgid "https://siteorigin.com"
 msgstr ""
 
@@ -637,9 +637,9 @@ msgid "SiteOrigin Installer"
 msgstr ""
 
 #: inc/installer/siteorigin-installer.php:4
-msgid "https://siteorigin.com/installer/"
+msgid "Streamline your WordPress setup with SiteOrigin's essential plugins and compatible themes in one go."
 msgstr ""
 
-#: inc/installer/siteorigin-installer.php:5
-msgid "Easily install all essential SiteOrigin plugins and themes in one go for your WordPress site."
+#: inc/installer/siteorigin-installer.php:12
+msgid "https://siteorigin.com/installer/"
 msgstr ""

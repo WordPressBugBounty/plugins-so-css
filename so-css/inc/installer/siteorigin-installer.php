@@ -1,17 +1,22 @@
 <?php
 /*
 Plugin Name: SiteOrigin Installer
-Plugin URI: https://siteorigin.com/installer/
-Description: Easily install all essential SiteOrigin plugins and themes in one go for your WordPress site.
+Description: Streamline your WordPress setup with SiteOrigin's essential plugins and compatible themes in one go.
+Version: 1.0.4
+Requires at least: 5.8
+Tested up to: 6.8
+Requires PHP: 7.0.0
 Author: SiteOrigin
+Text Domain: siteorigin-installer-text-domain
 Author URI: https://siteorigin.com
-Version: 1.0.3
-License: GNU General Public License v3.0
-License URI: http://www.opensource.org/licenses/gpl-license.php
+Plugin URI: https://siteorigin.com/installer/
+Update URI: https://github.com/siteorigin/siteorigin-installer/
+License: GPLv3
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
 */
 
 if ( ! defined( 'SITEORIGIN_INSTALLER_VERSION' ) ) {
-	define( 'SITEORIGIN_INSTALLER_VERSION', '1.0.3' );
+	define( 'SITEORIGIN_INSTALLER_VERSION', '1.0.4' );
 	define( 'SITEORIGIN_INSTALLER_DIR', plugin_dir_path( __FILE__ ) );
 	define( 'SITEORIGIN_INSTALLER_URL', plugin_dir_url( __FILE__ ) );
 }
@@ -48,10 +53,21 @@ if ( ! class_exists( 'SiteOrigin_Installer' ) ) {
 				is_admin() &&
 				self::user_has_permission()
 			) {
-				// If the installer has been installed as a plugin (rather than bundled), setup the Github updater.
-				if ( basename( SITEORIGIN_INSTALLER_DIR ) == 'siteorigin-installer-develop' ) {
-					require_once SITEORIGIN_INSTALLER_DIR . '/inc/github-plugin-updater.php';
-					new SiteOrigin_Installer_GitHub_Updater( __FILE__ );
+				/**
+				 * Determine if the SiteOrigin Installer is a standalone plugin to conditionally load the updater.
+				 * This prevents loading the updater when the Installer is bundled within another plugin.
+				 */
+				$plugin_basename = plugin_basename( __FILE__ );
+				$is_standalone = (
+					$plugin_basename === 'siteorigin-installer/siteorigin-installer.php' ||
+					strpos( $plugin_basename, 'siteorigin-installer-' ) === 0
+				);
+				
+				if ( $is_standalone ) {
+					if ( file_exists( plugin_dir_path( __FILE__ ) . 'github-updater/updater.php' ) ) {
+						require_once plugin_dir_path( __FILE__ ) . 'github-updater/updater.php';
+						new SiteOrigin_Updater( __FILE__, 'siteorigin-installer', 'siteorigin/siteorigin-installer' );
+					}
 				}
 
 				require_once __DIR__ . '/inc/admin.php';

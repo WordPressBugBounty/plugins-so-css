@@ -2,9 +2,9 @@
 Tags: css editor, visual css, live editing, theme editor, website styling
 Requires at least: 3.9
 Requires PHP: 7.0.0
-Tested up to: 6.9
-Stable tag: 1.6.5
-Build time: 2025-12-06T20:16:21+00:00
+Tested up to: 7.0
+Stable tag: 1.6.6
+Build time: 2026-05-21T11:08:40+01:00
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Contributors: gpriday, alexgso
@@ -72,6 +72,9 @@ Free support is available on the [SiteOrigin support forums](https://siteorigin.
 SiteOrigin Premium includes access to our professional email support service, perfect for those times when you need fast and effective technical support. We're standing by to assist you in any way we can.
 
 == Changelog ==
+
+= 1.6.6 - 21 May 2026 =
+* Fixed admin field heights and toolbar button layout for WordPress 7.0 form control changes.
 
 = 1.6.5 - 06 December 2025 =
 * Updated Tested up to tag.
