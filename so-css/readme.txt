@@ -2,9 +2,9 @@
 Tags: css editor, visual css, live editing, theme editor, website styling
 Requires at least: 3.9
 Requires PHP: 7.0.0
-Tested up to: 7.0
-Stable tag: 1.6.6
-Build time: 2026-05-21T11:08:40+01:00
+Tested up to: 7.1
+Stable tag: 1.6.7
+Build time: 2026-10-05T18:51:08+01:00
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Contributors: gpriday, alexgso
@@ -72,6 +72,11 @@ Free support is available on the [SiteOrigin support forums](https://siteorigin.
 SiteOrigin Premium includes access to our professional email support service, perfect for those times when you need fast and effective technical support. We're standing by to assist you in any way we can.
 
 == Changelog ==
+
+= 1.6.7 - 05 October 2026 =
+* Visual Editor: Clearing a field now removes only that property. Previously, it also removed the properties after it in the same rule.
+* Visual Editor: The Font Family Google Font teaser now respects the `siteorigin_premium_upgrade_teaser` filter.
+* Updated Tested up to tag.
 
 = 1.6.6 - 21 May 2026 =
 * Fixed admin field heights and toolbar button layout for WordPress 7.0 form control changes.

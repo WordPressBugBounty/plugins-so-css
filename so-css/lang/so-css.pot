@@ -548,7 +548,7 @@ msgstr ""
 msgid "Invalid URI. Please make sure you're using a URL from the same site."
 msgstr ""
 
-#: tpl/js-templates.php:69
+#: tpl/js-templates.php:70
 msgid "Get a %sGoogle Font%s selector."
 msgstr ""
 
@@ -642,4 +642,8 @@ msgstr ""
 
 #: inc/installer/siteorigin-installer.php:12
 msgid "https://siteorigin.com/installer/"
+msgstr ""
+
+#: node_modules/siteorigin-tests-common/playground/setup.php:3
+msgid "SiteOrigin Widgets Playground Setup"
 msgstr ""
