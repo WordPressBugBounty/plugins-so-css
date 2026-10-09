@@ -3,8 +3,8 @@ Tags: css editor, visual css, live editing, theme editor, website styling
 Requires at least: 3.9
 Requires PHP: 7.0.0
 Tested up to: 7.1
-Stable tag: 1.6.7
-Build time: 2026-10-05T18:51:08+01:00
+Stable tag: 1.6.8
+Build time: 2026-10-09T16:51:43+01:00
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Contributors: gpriday, alexgso
@@ -72,6 +72,9 @@ Free support is available on the [SiteOrigin support forums](https://siteorigin.
 SiteOrigin Premium includes access to our professional email support service, perfect for those times when you need fast and effective technical support. We're standing by to assist you in any way we can.
 
 == Changelog ==
+
+= 1.6.8 - 09 October 2026 =
+* Inspector: Improved output handling for links and selectors.
 
 = 1.6.7 - 05 October 2026 =
 * Visual Editor: Clearing a field now removes only that property. Previously, it also removed the properties after it in the same rule.
