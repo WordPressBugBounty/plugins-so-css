@@ -2,7 +2,7 @@
 /*
 Plugin Name: SiteOrigin CSS
 Description: Powerful, simple CSS editing for WordPress. Visual controls & real-time previews for effortless site customization.
-Version: 1.6.9
+Version: 1.6.10
 Requires at least: 6.0
 Requires PHP: 7.0.0
 Author: SiteOrigin
@@ -16,7 +16,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 // Handle the legacy CSS editor that came with SiteOrigin themes
 include plugin_dir_path( __FILE__ ) . 'inc/legacy.php';
 
-define( 'SOCSS_VERSION', '1.6.9' );
+define( 'SOCSS_VERSION', '1.6.10' );
 define( 'SOCSS_JS_SUFFIX', '.min' );
 
 /**

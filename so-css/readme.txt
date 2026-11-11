@@ -3,8 +3,8 @@ Tags: css editor, visual css, live editing, theme editor, website styling
 Requires at least: 6.0
 Requires PHP: 7.0.0
 Tested up to: 7.1
-Stable tag: 1.6.9
-Build time: 2026-11-07T10:57:41+00:00
+Stable tag: 1.6.10
+Build time: 2026-11-11T20:02:19+00:00
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Contributors: gpriday, alexgso
@@ -72,6 +72,10 @@ Free support is available on the [SiteOrigin support forums](https://siteorigin.
 SiteOrigin Premium includes access to our professional email support service, perfect for those times when you need fast and effective technical support. We're standing by to assist you in any way we can.
 
 == Changelog ==
+
+= 1.6.10 - 11 November 2026 =
+* Inspector: Improved selector matching and output handling.
+* Editor: Improved live preview output handling.
 
 = 1.6.9 - 07 November 2026 =
 * Visual Editor: Measurement fields now start in their configured default unit instead of always using pixels.
